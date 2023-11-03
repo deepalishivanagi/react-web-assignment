@@ -1,6 +1,3 @@
-import { act } from "react-dom/test-utils";
-
-
 const intialState:{[key:string]:any} = {
     chirpzList: [],
     modalOpen:false,
@@ -23,13 +20,7 @@ const appReducer = (state = intialState, action:{[key:string]:any}) => {
             }
         case "CREATECHIRPZ":
             {
-             
-                return { ...state }
-            }
-        case "DELETE":
-            {
-    
-                return { ...state}
+                return { ...state,chirpzList:[action.payload,...state.chirpzList] }
             }
         default:
             return state;

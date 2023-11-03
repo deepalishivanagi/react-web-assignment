@@ -26,14 +26,6 @@ function ModalPage(props: any) {
     const dispatch = useDispatch();
     const state = useSelector((state: any) => state.appReducer);
 
-    const openModal = () => {
-        dispatch({ type: "MODALOPEN" })
-    }
-
-    const afterOpenModal = () => {
-        // subtitle.style.color = '#f00';
-    }
-
     const closeModalHandler = () => {
         setTagList([]);
         setTags("");
@@ -55,6 +47,7 @@ function ModalPage(props: any) {
                 "userName": "John Deo",
                 "caption": caption,
                 "tags": tagList,
+                "createdAt": new Date().toISOString(),
             }
             const resp = await fetch('http://localhost:4000/api/v1/posts', {
                 method: "POST",
@@ -63,10 +56,9 @@ function ModalPage(props: any) {
             })
             const result = await resp.json();
             if (result.status) {
-                props.getChirpzList();
+                dispatch({type:"CREATECHIRPZ",payload:result.body})
                 closeModalHandler();
             }
-            console.log(result, "----");
         } catch (error) {
             console.log(error);
         }
@@ -76,7 +68,6 @@ function ModalPage(props: any) {
     return (
         <Modal
             isOpen={state.modalOpen}
-            onAfterOpen={afterOpenModal}
             onRequestClose={closeModalHandler}
             style={customStyles}
             contentLabel="Example Modal"

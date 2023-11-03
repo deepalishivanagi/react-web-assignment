@@ -9,7 +9,6 @@ import { verified } from "../Data";
 function HomePage() {
     const dispatch = useDispatch();
     const state = useSelector((state: any) => state.appReducer);
-    console.log(state.chirpzList, "-----")
     const list = state.chirpzList;
 
     const getChirpzList = async () => {
@@ -58,7 +57,7 @@ function HomePage() {
                 })}
 
             </div>
-            <ModalPage getChirpzList={getChirpzList} />
+            <ModalPage/>
         </div>
     )
 
