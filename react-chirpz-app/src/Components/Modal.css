@@ -1,0 +1,103 @@
+.modalContainer {
+    width: 30vw;
+    height: 25vw;
+    padding: 4vw;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.38vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.headSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headSection span {
+    color: #FFB501;
+}
+
+.headSection button {
+    background: transparent;
+    border: none;
+    height: 26px;
+    width: 26px;
+}
+
+.formSection input {
+    color: #3F4B63;
+    background: transparent;
+    border: none;
+    font-size: 1.38vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.formSection input:focus {
+    outline: none;
+}
+
+.tagsHeading {
+    margin-top: 5vw;
+}
+
+.AddBtn {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.38vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    background: transparent;
+    border: none;
+}
+
+.modalFooter {
+    margin-top: 15vw;
+    float: right;
+}
+
+.modalFooter button {
+    padding: 6px 19px;
+    margin-left: 1.3vw;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.11vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.modalFooter button:nth-child(1) {
+    border-radius: 30px;
+    background: #E88607;
+}
+
+.modalFooter button:nth-child(2) {
+    border-radius: 30px;
+    background: #2B4275;
+}
+
+.addedTags {
+    border-radius: 5px;
+    background: #28395A;
+    padding: 7px 10px;
+    color: #CFD7E7;
+    margin: 5px 10px 5px 0px;
+    font-family: Inter, sans-serif;
+    font-size: 0.83vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin-top: 5vw;
+}

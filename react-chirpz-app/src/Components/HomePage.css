@@ -1,0 +1,91 @@
+.singleCard {
+    text-align: start;
+    padding: 4vw 3vw 0vw 5vw;
+}
+
+.homePageContainer {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.38vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.nameSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+}
+
+.userName {
+    color: #FFF;
+    font-size: 1.04vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.375px;
+}
+
+.caption {
+    color: #A6B6D6;
+    font-size: 1.04vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tags {
+    display: inline-block;
+    margin: 8px;
+    padding: 7px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #28395A;
+    color: #CFD7E7;
+
+    font-size: 0.83vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+
+.homeHeader {
+    margin-bottom: 5vw;
+    padding-top: 2vw;
+    position: fixed;
+    top: 0;
+    width: 35%;
+    background:#091224 ;
+}
+
+.hrLine {
+    height: 1px;
+    background: #142340;
+    margin-top: 1vw;
+}
+
+.createModal {
+    border-radius: 30px;
+    background: #E88607;
+    padding: 0.4vw 1.4vw;
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    float: right;
+}
+
+.cardListContainer {
+    height: 100vh;
+    overflow: auto;
+    margin-top: 6vw;
+}

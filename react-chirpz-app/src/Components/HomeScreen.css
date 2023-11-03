@@ -1,0 +1,38 @@
+.mainContainer {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    font-family: Inter, sans-serif;
+}
+
+.firstSection,
+.lastSection {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.67vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.59px;
+    padding-right: 50px;
+}
+
+.middleSection {
+    width: 40%;
+    margin-top: auto;
+    border: 1px solid #142340;
+    border-top: none;
+}
+
+.profile {
+    font-size: 1.38vw !important;
+    padding: 0px 10px;
+}
+
+.manuIcon {
+    margin-left: 30px;
+}
